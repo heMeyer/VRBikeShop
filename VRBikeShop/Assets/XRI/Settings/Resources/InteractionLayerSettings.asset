@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - MainFrame
+  - FrontFrame
+  - Wheel
+  - LowerSeat
+  - HandleFrame
+  - Handle_right
+  - PedalPlate_Left
+  - Pedal_Left
+  - Handle_left
+  - PedalPlate_right
+  - Pedal_Right
+  - FrontFramePart
   - 
   - 
   - 
