@@ -8,8 +8,10 @@ public class radioController : MonoBehaviour
     public AudioClip musicClip = null;
     public AudioClip switchClip = null;
     public float volume = 1.0f;
-    private float waitTime = 2.0f;
     public bool playOnStart = false;
+
+    private float waitTime = 2.0f;
+    private float musicClipTime = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,12 @@ public class radioController : MonoBehaviour
     public void Play(AudioClip clip)
     {
         audioSource.clip = clip;
+
+        if (clip = musicClip)
+        {
+            audioSource.time = musicClipTime;
+        }
+
         audioSource.Play();
     }
 
@@ -59,6 +67,7 @@ public class radioController : MonoBehaviour
 
     IEnumerator SwitchOff()
     {
+        musicClipTime = audioSource.time;
         Play(switchClip);
         yield return new WaitForSeconds(waitTime);
         audioSource.clip = null;
