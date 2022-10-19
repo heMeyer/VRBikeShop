@@ -215,7 +215,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -338,12 +338,6 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 150037118}
         m_TargetAssemblyTypeName: radioController, Assembly-CSharp
@@ -357,6 +351,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -399,6 +399,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f41e1ed757888244a31a3f9f84a9889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicClip: {fileID: 8300000, guid: cba2538823e42d74ba4b921713d27f3d, type: 3}
+  switchClip: {fileID: 8300000, guid: ecffe3574ffeef342913816718725a6b, type: 3}
+  volume: 0.15
+  playOnStart: 1
 --- !u!1 &173494786
 GameObject:
   m_ObjectHideFlags: 0
