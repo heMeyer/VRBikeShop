@@ -2013,7 +2013,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 16384
   m_SelectMode: 1
   m_CustomReticle: {fileID: 8656087483511947524, guid: 2e8154b62c0e2bd49b59a3b62b014b43, type: 3}
   m_FirstHoverEntered:
