@@ -7,7 +7,7 @@ public class ScenePartLoader : MonoBehaviour
 {
     //scene state
     private bool isLoaded;
-    private bool shouldLoad = true;
+    private bool shouldLoad;
 
     // Start is called before the first frame update
     void Start()
