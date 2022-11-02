@@ -23,21 +23,24 @@ public class ScenePartLoader : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
+        /*
         Debug.Log("Collided und so");
 
         if (other.CompareTag("RightController"))
         {
             shouldLoad = true;
         }
+        */
     }
 
     private void OnTriggerExit(Collider other)
     {
+        /*
         if (other.CompareTag("RightController"))
         {
             shouldLoad = false;
         }
+        */
     }
 
     void TriggerCheck()
