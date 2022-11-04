@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000008, guid: 7bdd38eb0242f7c468e0575ef49d36c5, type: 2}
+  m_LightingDataAsset: {fileID: 112000008, guid: 82b0c92cd349fd94bb9711c871b25d0f, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 59e2ae323b4333d44a33996af3fcb06f, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -330,7 +330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389482973}
   m_LocalRotation: {x: 0.70710707, y: -0, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: 0, y: 2.388, z: 0}
+  m_LocalPosition: {x: 0, y: 2.338, z: 0}
   m_LocalScale: {x: 1.7405, y: 1.3881, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -394,7 +394,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.02e-43, y: 0, z: 0, w: -8.6198576e-36}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 0, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1257,6 +1257,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8823768084932653889, guid: 30a9f4f759d096b40abf5a49e54e8d12, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30a9f4f759d096b40abf5a49e54e8d12, type: 3}
 --- !u!4 &677971842 stripped
@@ -1346,6 +1350,10 @@ PrefabInstance:
     - target: {fileID: 8823768084932653889, guid: 30a9f4f759d096b40abf5a49e54e8d12, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8823768084932653889, guid: 30a9f4f759d096b40abf5a49e54e8d12, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30a9f4f759d096b40abf5a49e54e8d12, type: 3}
@@ -1580,6 +1588,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8823768084932653889, guid: 30a9f4f759d096b40abf5a49e54e8d12, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30a9f4f759d096b40abf5a49e54e8d12, type: 3}
 --- !u!4 &1212283458 stripped
@@ -1617,7 +1629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469942405}
   m_LocalRotation: {x: 0.70710707, y: -0, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: -1.5, y: 2.388, z: 0}
+  m_LocalPosition: {x: -1.5, y: 2.338, z: 0}
   m_LocalScale: {x: 1.7405, y: 1.3881, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1681,7 +1693,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: NaN, y: 1e-45, z: 7e-44, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 3.4e-44, z: 0, w: -3.4e-44}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -2077,7 +2089,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083493903}
   m_LocalRotation: {x: 0.70710707, y: -0, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: 1.5, y: 2.388, z: 0}
+  m_LocalPosition: {x: 1.5, y: 2.338, z: 0}
   m_LocalScale: {x: 1.7405, y: 1.3881, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2141,7 +2153,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 7.584e-42, z: 1.02e-43, w: 1.147944e-39}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 7e-45}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
