@@ -40,8 +40,11 @@ public class ShowMessageFromList : MonoBehaviour
 
     public void PreviousMessage()
     {
-        index = --index % messages.Count;
-        ShowMessage();
+        if(index > 0)
+        {
+            index = --index % messages.Count;
+            ShowMessage();
+        }
     }
 
     private void ShowMessage()
