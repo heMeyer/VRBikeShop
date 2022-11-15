@@ -473,6 +473,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "TeleportAnchorActivate",
+                    "type": "Value",
+                    "id": "e32d20dd-0c7a-4662-87ad-d67ab678b4fb",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Teleport Mode Activate",
                     "type": "Value",
                     "id": "a21db72c-4843-4839-b4d0-3ce8d287cb86",
@@ -562,6 +571,17 @@
                     "processors": "StickDeadzone",
                     "groups": "Continuous Move",
                     "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "12cf5b21-ade1-4852-a97d-88a0ebc4b86d",
+                    "path": "<XRController>{LeftHand}/Primary2DAxis",
+                    "interactions": "Sector(directions=1,sweepBehavior=3,pressPoint=0.15)",
+                    "processors": "",
+                    "groups": "Noncontinuous Move",
+                    "action": "TeleportAnchorActivate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -991,6 +1011,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "TeleportAnchorActivate",
+                    "type": "Value",
+                    "id": "2f7a4fd4-a30f-4282-8557-bf2df0654f98",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Teleport Mode Activate",
                     "type": "Value",
                     "id": "a6c7231d-c55d-4dd4-9e87-877bb5522ef5",
@@ -1069,6 +1098,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Turn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0bf11226-5403-4ca8-aa68-8638ce887ad2",
+                    "path": "<XRController>{RightHand}/thumbstick",
+                    "interactions": "Sector(directions=1,sweepBehavior=3,pressPoint=0.15)",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "TeleportAnchorActivate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

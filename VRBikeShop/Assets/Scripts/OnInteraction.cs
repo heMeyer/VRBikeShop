@@ -18,6 +18,9 @@ public class OnInteraction : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.tag == "Bike")
+        {
             other.attachedRigidbody.isKinematic = false;
+        }
     }
 }

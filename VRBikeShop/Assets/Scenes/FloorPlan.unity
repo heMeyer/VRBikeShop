@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 29349403}
   m_Layer: 0
   m_Name: Next
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 78937305}
   m_Layer: 0
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 81609516}
   m_Layer: 0
   m_Name: FadeCanvas
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 129896504}
   m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -903,6 +903,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &214393171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2783798770192180158, guid: 05f80251f6c64bb47849c58dd3755290, type: 3}
+  m_PrefabInstance: {fileID: 4550746069305482424}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &357806804
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,7 +923,7 @@ GameObject:
   - component: {fileID: 357806806}
   m_Layer: 0
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1039,7 +1044,7 @@ GameObject:
   - component: {fileID: 363049193}
   m_Layer: 0
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1543,7 +1548,7 @@ GameObject:
   - component: {fileID: 534529214}
   m_Layer: 0
   m_Name: Back
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2185,8 +2190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e388c35630f40746a2486f677f7716b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceToggle: 0
-  directInteractor: {fileID: 1751300073}
 --- !u!1 &734378446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,7 +2239,7 @@ GameObject:
   - component: {fileID: 919854428}
   m_Layer: 0
   m_Name: ResetScene
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2634,7 +2637,7 @@ GameObject:
   - component: {fileID: 1232319628}
   m_Layer: 0
   m_Name: Welcome
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3005,7 +3008,7 @@ GameObject:
   - component: {fileID: 1479636343}
   m_Layer: 0
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3144,7 +3147,7 @@ GameObject:
   - component: {fileID: 1515693150}
   m_Layer: 0
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3598,7 +3601,7 @@ GameObject:
   - component: {fileID: 1751300076}
   m_Layer: 0
   m_Name: LeftController
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3912,11 +3915,11 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: ccc4d34c-88b1-4aa1-b9d2-a67ca380732e
-      m_Path: <XRController>{LeftHand}/primaryButton
-      m_Interactions: 
+      m_Id: a3962a79-2fe2-4deb-84d1-c64064a2b619
+      m_Path: <XRController>{LeftHand}/Primary2DAxis
+      m_Interactions: Sector(directions=1,sweepBehavior=3,pressPoint=0.15)
       m_Processors: 
-      m_Groups: 
+      m_Groups: Noncontinuous Move
       m_Action: Action
       m_Flags: 0
     m_Flags: 0
@@ -3925,7 +3928,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 638171748}
         m_TargetAssemblyTypeName: ToggleRay, Assembly-CSharp
-        m_MethodName: ToggleRayCast
+        m_MethodName: RayCastOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3937,7 +3940,19 @@ MonoBehaviour:
         m_CallState: 2
   OnRelease:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 638171748}
+        m_TargetAssemblyTypeName: ToggleRay, Assembly-CSharp
+        m_MethodName: RayCastOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1751300076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4640,8 +4655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e388c35630f40746a2486f677f7716b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceToggle: 0
-  directInteractor: {fileID: 2025760248}
 --- !u!1 &1920913075
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,7 +4666,7 @@ GameObject:
   - component: {fileID: 1920913076}
   m_Layer: 0
   m_Name: AttachTransform
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4688,7 +4701,7 @@ GameObject:
   - component: {fileID: 1994476398}
   m_Layer: 0
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5152,11 +5165,11 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: ccc4d34c-88b1-4aa1-b9d2-a67ca380732e
-      m_Path: <XRController>{RightHand}/primaryButton
-      m_Interactions: 
+      m_Id: 7a8a28fe-f795-4a7a-b1c1-49f0dcacf263
+      m_Path: <XRController>{RightHand}/thumbstick
+      m_Interactions: Sector(directions=1,sweepBehavior=3,pressPoint=0.15)
       m_Processors: 
-      m_Groups: 
+      m_Groups: Generic XR Controller
       m_Action: Action
       m_Flags: 0
     m_Flags: 0
@@ -5165,7 +5178,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1900304876}
         m_TargetAssemblyTypeName: ToggleRay, Assembly-CSharp
-        m_MethodName: ToggleRayCast
+        m_MethodName: RayCastOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5177,7 +5190,19 @@ MonoBehaviour:
         m_CallState: 2
   OnRelease:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1900304876}
+        m_TargetAssemblyTypeName: ToggleRay, Assembly-CSharp
+        m_MethodName: RayCastOff
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2025760251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5204,7 +5229,7 @@ GameObject:
   - component: {fileID: 2026796643}
   m_Layer: 0
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5715,7 +5740,7 @@ GameObject:
   - component: {fileID: 23285752162483845}
   m_Layer: 0
   m_Name: PAGE
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5735,7 +5760,7 @@ GameObject:
   - component: {fileID: 2086213715}
   m_Layer: 0
   m_Name: Clipboard
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5753,7 +5778,7 @@ GameObject:
   - component: {fileID: 23832009825516177}
   m_Layer: 0
   m_Name: Board
-  m_TagString: Untagged
+  m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6023,6 +6048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedal_Left
       objectReference: {fileID: 0}
+    - target: {fileID: 7135183354846014826, guid: 359a30a9c73f59147a8271df76c86750, type: 3}
+      propertyPath: m_TagString
+      value: Bike
+      objectReference: {fileID: 0}
     - target: {fileID: 7135183354846014828, guid: 359a30a9c73f59147a8271df76c86750, type: 3}
       propertyPath: m_MovementType
       value: 1
@@ -6048,6 +6077,10 @@ PrefabInstance:
     - target: {fileID: 5287650896267735742, guid: 87bf81bfd4aac264f990efb77efeb422, type: 3}
       propertyPath: m_Name
       value: Front Frame Part
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287650896267735742, guid: 87bf81bfd4aac264f990efb77efeb422, type: 3}
+      propertyPath: m_TagString
+      value: Bike
       objectReference: {fileID: 0}
     - target: {fileID: 7692207346825777743, guid: 87bf81bfd4aac264f990efb77efeb422, type: 3}
       propertyPath: m_RootOrder
@@ -6126,7 +6159,7 @@ GameObject:
   - component: {fileID: 106784906738832229}
   m_Layer: 3
   m_Name: Bicycle
-  m_TagString: Untagged
+  m_TagString: Bike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6141,6 +6174,10 @@ PrefabInstance:
     - target: {fileID: 3594321088930360423, guid: 992cab45c7a088049b17b47d9f481c30, type: 3}
       propertyPath: m_Name
       value: Wheel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594321088930360423, guid: 992cab45c7a088049b17b47d9f481c30, type: 3}
+      propertyPath: m_TagString
+      value: Bike
       objectReference: {fileID: 0}
     - target: {fileID: 7831049948800657878, guid: 992cab45c7a088049b17b47d9f481c30, type: 3}
       propertyPath: m_RootOrder
@@ -6239,6 +6276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PedalPlate_Left
       objectReference: {fileID: 0}
+    - target: {fileID: 1570719774561654367, guid: 4b24496bd99160c4189c31481dff458f, type: 3}
+      propertyPath: m_TagString
+      value: Bike
+      objectReference: {fileID: 0}
     - target: {fileID: 5329690949732346850, guid: 4b24496bd99160c4189c31481dff458f, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -6320,6 +6361,10 @@ PrefabInstance:
     - target: {fileID: 465101571292683601, guid: 3b2b5502daf3ab644b402d148aff6fba, type: 3}
       propertyPath: m_Name
       value: Pedal_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 465101571292683601, guid: 3b2b5502daf3ab644b402d148aff6fba, type: 3}
+      propertyPath: m_TagString
+      value: Bike
       objectReference: {fileID: 0}
     - target: {fileID: 3790655704436027243, guid: 3b2b5502daf3ab644b402d148aff6fba, type: 3}
       propertyPath: m_RootOrder
@@ -6458,6 +6503,10 @@ PrefabInstance:
     - target: {fileID: 2783798770192180158, guid: 05f80251f6c64bb47849c58dd3755290, type: 3}
       propertyPath: m_Name
       value: Front Frame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2783798770192180158, guid: 05f80251f6c64bb47849c58dd3755290, type: 3}
+      propertyPath: m_TagString
+      value: Bike
       objectReference: {fileID: 0}
     - target: {fileID: 4740273162385572789, guid: 05f80251f6c64bb47849c58dd3755290, type: 3}
       propertyPath: m_RootOrder
@@ -6600,6 +6649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wheel1
       objectReference: {fileID: 0}
+    - target: {fileID: 5511207142286616057, guid: 6926e169c1bff494db06d220cc16cb1a, type: 3}
+      propertyPath: m_TagString
+      value: Bike
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6926e169c1bff494db06d220cc16cb1a, type: 3}
 --- !u!1001 &5874551091737209020
@@ -6677,6 +6730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ' Seat Part'
       objectReference: {fileID: 0}
+    - target: {fileID: 7163313924972635540, guid: 489a7eaaa3e79e94eb717d2fbd78dba0, type: 3}
+      propertyPath: m_TagString
+      value: Bike
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 489a7eaaa3e79e94eb717d2fbd78dba0, type: 3}
 --- !u!4 &5885509160557261394 stripped
@@ -6694,6 +6751,10 @@ PrefabInstance:
     - target: {fileID: 5082290341527948750, guid: 4c3e56af43dcc314ba56d713381b2bf3, type: 3}
       propertyPath: m_Name
       value: HandleFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5082290341527948750, guid: 4c3e56af43dcc314ba56d713381b2bf3, type: 3}
+      propertyPath: m_TagString
+      value: Bike
       objectReference: {fileID: 0}
     - target: {fileID: 8561802369816713432, guid: 4c3e56af43dcc314ba56d713381b2bf3, type: 3}
       propertyPath: m_RootOrder
@@ -6789,6 +6850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PedalPlate_Right
       objectReference: {fileID: 0}
+    - target: {fileID: 5030337345875177730, guid: 88c56ecf60af0e24d96c41e7876d2f42, type: 3}
+      propertyPath: m_TagString
+      value: Bike
+      objectReference: {fileID: 0}
     - target: {fileID: 5258400198257294965, guid: 88c56ecf60af0e24d96c41e7876d2f42, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -6874,6 +6939,10 @@ PrefabInstance:
     - target: {fileID: 4440544344680117853, guid: cd8a0f4da480f12499b26fc599ce706b, type: 3}
       propertyPath: m_Name
       value: Main Frame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440544344680117853, guid: cd8a0f4da480f12499b26fc599ce706b, type: 3}
+      propertyPath: m_TagString
+      value: Bike
       objectReference: {fileID: 0}
     - target: {fileID: 7475450598081030871, guid: cd8a0f4da480f12499b26fc599ce706b, type: 3}
       propertyPath: m_RootOrder
@@ -7018,6 +7087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handle_right
       objectReference: {fileID: 0}
+    - target: {fileID: 4806889130740200524, guid: bc42810e41f1cb1479c0ca57ab692fd3, type: 3}
+      propertyPath: m_TagString
+      value: Bike
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc42810e41f1cb1479c0ca57ab692fd3, type: 3}
 --- !u!1001 &8090008233887517829
@@ -7038,6 +7111,10 @@ PrefabInstance:
     - target: {fileID: 7859817795435835042, guid: 27f187c90f1ce284599f7be73ebfa859, type: 3}
       propertyPath: m_Name
       value: Handle_left
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859817795435835042, guid: 27f187c90f1ce284599f7be73ebfa859, type: 3}
+      propertyPath: m_TagString
+      value: Bike
       objectReference: {fileID: 0}
     - target: {fileID: 8444939637781000968, guid: 27f187c90f1ce284599f7be73ebfa859, type: 3}
       propertyPath: m_RootOrder
@@ -7107,3 +7184,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4740273162385572789, guid: 05f80251f6c64bb47849c58dd3755290, type: 3}
   m_PrefabInstance: {fileID: 4550746069305482424}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &9146716435877863186
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214393171}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.91736925, y: 3.1526184, z: 0.66294473}
+  m_Center: {x: -0.07130107, y: -0.41960332, z: -0.00037764508}
