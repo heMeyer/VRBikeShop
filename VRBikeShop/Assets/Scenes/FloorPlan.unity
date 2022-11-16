@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 29349401}
   - component: {fileID: 29349400}
   - component: {fileID: 29349403}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Next
   m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 81609516}
   m_Layer: 0
   m_Name: FadeCanvas
-  m_TagString: UI_RayInteractable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 129896503}
   - component: {fileID: 129896505}
   - component: {fileID: 129896504}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 357806808}
   - component: {fileID: 357806807}
   - component: {fileID: 357806806}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
@@ -1376,7 +1376,7 @@ GameObject:
   - component: {fileID: 512859593}
   - component: {fileID: 512859595}
   - component: {fileID: 512859594}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1546,7 +1546,7 @@ GameObject:
   - component: {fileID: 534529216}
   - component: {fileID: 534529215}
   - component: {fileID: 534529214}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Back
   m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
@@ -3145,7 +3145,7 @@ GameObject:
   - component: {fileID: 1515693149}
   - component: {fileID: 1515693151}
   - component: {fileID: 1515693150}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
@@ -4664,7 +4664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1920913076}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AttachTransform
   m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
@@ -5227,7 +5227,7 @@ GameObject:
   - component: {fileID: 2026796642}
   - component: {fileID: 2026796641}
   - component: {fileID: 2026796643}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
@@ -5738,7 +5738,7 @@ GameObject:
   - component: {fileID: 4765888614824575}
   - component: {fileID: 33511468656956845}
   - component: {fileID: 23285752162483845}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PAGE
   m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
@@ -5758,9 +5758,9 @@ GameObject:
   - component: {fileID: 2086213716}
   - component: {fileID: 2086213720}
   - component: {fileID: 2086213715}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Clipboard
-  m_TagString: UI_RayInteractable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5776,7 +5776,7 @@ GameObject:
   - component: {fileID: 4706569382832887}
   - component: {fileID: 33115529333351095}
   - component: {fileID: 23832009825516177}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Board
   m_TagString: UI_RayInteractable
   m_Icon: {fileID: 0}
@@ -6439,6 +6439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1857123473}
     m_Modifications:
+    - target: {fileID: 2874072568456846361, guid: d6942e5e20779684bb5cf792c3ef051f, type: 3}
+      propertyPath: m_StartingSelectedInteractable
+      value: 
+      objectReference: {fileID: 2086213715}
     - target: {fileID: 3292501640518713263, guid: d6942e5e20779684bb5cf792c3ef051f, type: 3}
       propertyPath: m_IsTrigger
       value: 1

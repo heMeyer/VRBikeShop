@@ -27,9 +27,9 @@ public class ToggleRay : MonoBehaviour
         var ray = new Ray(this.transform.position, this.transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, 5))
         {
-            Debug.Log(hit.transform.gameObject);
+            //Debug.Log(hit.transform.gameObject);
 
             if (hit.transform.gameObject.tag == "UI_RayInteractable" && !isSwitched)    //Ray darf nur angeschaltet werden wenn nicht eh schon an
             {
