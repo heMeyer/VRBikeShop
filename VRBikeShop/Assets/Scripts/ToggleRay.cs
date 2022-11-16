@@ -13,7 +13,7 @@ public class ToggleRay : MonoBehaviour
     private XRRayInteractor rayInteractor = null;
     private XRInteractorLineVisual lineVisual = null;
     private bool isSwitched = true;
-    RaycastHit hit;
+    private bool RaycastOverride = false;
 
     private void Awake()
     {
@@ -21,6 +21,25 @@ public class ToggleRay : MonoBehaviour
         lineVisual = GetComponentInChildren<XRInteractorLineVisual>();
 
         SwitchInteractors(false);
+    }
+    private void Update()
+    {
+        var ray = new Ray(this.transform.position, this.transform.forward);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            Debug.Log(hit.transform.gameObject);
+
+            if (hit.transform.gameObject.tag == "UI_RayInteractable" && !isSwitched)    //Ray darf nur angeschaltet werden wenn nicht eh schon an
+            {
+                SwitchInteractors(true);
+            } 
+            else if (!(hit.transform.gameObject.tag == "UI_RayInteractable") && !RaycastOverride && isSwitched)                                    //Ray darf nur ausgeschaltet werden wenn nicht durch Steuerknüppel angeschaltet und nicht eh schon aus
+            {
+                SwitchInteractors(false);
+            }
+        }
     }
 
     public void ToggleRayCast()
@@ -38,11 +57,13 @@ public class ToggleRay : MonoBehaviour
     public void RayCastOn()
     {
         SwitchInteractors(true);
+        RaycastOverride = true;
     }
 
     public void RayCastOff()
     {
         SwitchInteractors(false);
+        RaycastOverride = false;
     }
 
     private void SwitchInteractors(bool value)

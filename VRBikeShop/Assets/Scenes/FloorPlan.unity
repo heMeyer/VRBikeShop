@@ -1044,7 +1044,7 @@ GameObject:
   - component: {fileID: 363049193}
   m_Layer: 0
   m_Name: Canvas
-  m_TagString: UI_RayInteractable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1089,7 +1089,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RaycastTriggerInteraction: 1
+  m_RaycastTriggerInteraction: 0
 --- !u!114 &363049194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
-  m_LineType: 1
+  m_LineType: 0
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 30
   m_RayOriginTransform: {fileID: 0}
@@ -2239,7 +2239,7 @@ GameObject:
   - component: {fileID: 919854428}
   m_Layer: 0
   m_Name: ResetScene
-  m_TagString: UI_RayInteractable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2637,7 +2637,7 @@ GameObject:
   - component: {fileID: 1232319628}
   m_Layer: 0
   m_Name: Welcome
-  m_TagString: UI_RayInteractable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3008,7 +3008,7 @@ GameObject:
   - component: {fileID: 1479636343}
   m_Layer: 0
   m_Name: Text
-  m_TagString: UI_RayInteractable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4448,7 +4448,7 @@ MonoBehaviour:
   m_PlayHapticsOnHoverCanceled: 0
   m_HapticHoverCancelIntensity: 0
   m_HapticHoverCancelDuration: 0
-  m_LineType: 1
+  m_LineType: 0
   m_BlendVisualLinePoints: 1
   m_MaxRaycastDistance: 30
   m_RayOriginTransform: {fileID: 0}
@@ -4701,7 +4701,7 @@ GameObject:
   - component: {fileID: 1994476398}
   m_Layer: 0
   m_Name: Button
-  m_TagString: UI_RayInteractable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6439,6 +6439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1857123473}
     m_Modifications:
+    - target: {fileID: 3292501640518713263, guid: d6942e5e20779684bb5cf792c3ef051f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3292501640892102806, guid: d6942e5e20779684bb5cf792c3ef051f, type: 3}
       propertyPath: m_Name
       value: Hook_Clipboard
