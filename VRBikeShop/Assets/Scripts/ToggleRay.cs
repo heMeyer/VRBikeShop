@@ -26,16 +26,19 @@ public class ToggleRay : MonoBehaviour
     {
         var ray = new Ray(this.transform.position, this.transform.forward);
         RaycastHit hit;
+        //int layerMaskUI = 1 << 5;
+        //int layerMaskObstacle = 1 << 2;
 
-        if (Physics.Raycast(ray, out hit, 5))
+        if(Physics.Raycast(ray, out hit))
         {
-            //Debug.Log(hit.transform.gameObject);
-
-            if (hit.transform.gameObject.tag == "UI_RayInteractable" && !isSwitched)    //Ray darf nur angeschaltet werden wenn nicht eh schon an
+            Debug.Log(hit.transform.gameObject);
+            //Ray darf nur angeschaltet werden wenn UI... getroffen wird und nicht eh schon an
+            if (hit.transform.gameObject.tag == "UI_RayInteractable" && !isSwitched)
             {
                 SwitchInteractors(true);
-            } 
-            else if (!(hit.transform.gameObject.tag == "UI_RayInteractable") && !RaycastOverride && isSwitched)                                    //Ray darf nur ausgeschaltet werden wenn nicht durch Steuerknüppel angeschaltet und nicht eh schon aus
+            }
+            //Ray darf nur ausgeschaltet werden wenn nicht durch Steuerknüppel angeschaltet, kein UR... getroffen wird und nicht eh schon aus
+            else if (!(hit.transform.gameObject.tag == "UI_RayInteractable") && !RaycastOverride && isSwitched)
             {
                 SwitchInteractors(false);
             }
