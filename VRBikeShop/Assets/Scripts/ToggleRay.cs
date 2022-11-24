@@ -26,10 +26,11 @@ public class ToggleRay : MonoBehaviour
     {
         var ray = new Ray(this.transform.position, this.transform.forward);
         RaycastHit hit;
+        int layerDefault = 1 << 0;
         //int layerMaskUI = 1 << 5;
         //int layerMaskObstacle = 1 << 2;
 
-        if(Physics.Raycast(ray, out hit))
+        if(Physics.Raycast(ray, out hit, 10, layerDefault))
         {
             Debug.Log(hit.transform.gameObject);
             //Ray darf nur angeschaltet werden wenn UI... getroffen wird und nicht eh schon an
