@@ -36,7 +36,9 @@ public class SocketManager : MonoBehaviour
 
             if(!alreadySent)
             {
-                bikeAssemblyManager.addInSocket();
+                Debug.Log(this.gameObject + " sent");
+                bikeAssemblyManager.addInSocket(obj.transform.gameObject);
+                alreadySent = true;
             }
         }
     }

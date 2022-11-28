@@ -6,9 +6,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class BikeAssemblyManager : MonoBehaviour
 {
     XRSocketInteractor xRSocketInteractor;
+    public GameObject bicycleAssembly;
     private bool somethingInSocket = false;
     public int partCount = 0;
-    public GameObject bicycleAssembly;
+    private ArrayList bikeParts = new ArrayList();
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,11 @@ public class BikeAssemblyManager : MonoBehaviour
     void Update()
     {
         socketCheck();
+
         if (somethingInSocket && partCount >= 13)
         {
             mergeBike();
+            partCount = 0;
         }
     }
 
@@ -31,13 +34,21 @@ public class BikeAssemblyManager : MonoBehaviour
         somethingInSocket = xRSocketInteractor.hasSelection;
     }
 
-    public void addInSocket()
+    public void addInSocket(GameObject bikePart)
     {
         partCount++;
+        bikeParts.Add(bikePart);
     }
 
     void mergeBike()
     {
-            Debug.Log("Rad zusammengebaut");
+        Debug.Log("Rad zusammengebaut");
+
+        foreach(GameObject go in bikeParts) {
+            Destroy(go);
+            // bikeParts.Remove(go);
+        }
+
+        bicycleAssembly.SetActive(true);
     }
 }
