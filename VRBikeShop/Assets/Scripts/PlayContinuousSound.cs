@@ -20,7 +20,7 @@ public class PlayContinuousSound : MonoBehaviour
     public float volume = 1.0f;
 
     private AudioSource audioSource = null;
-    private MonoBehaviour currentOwner = null;
+    // private MonoBehaviour currentOwner = null;
 
     private void Awake()
     {

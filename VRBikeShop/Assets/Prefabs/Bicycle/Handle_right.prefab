@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4806889130740200524
+--- !u!1 &4644474936868189492
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 367093819204664018}
-  - component: {fileID: 4829072176288716834}
-  - component: {fileID: 7492293286983580437}
-  - component: {fileID: 367093819204663983}
-  - component: {fileID: 367093819204663980}
-  - component: {fileID: 367093819204663981}
+  - component: {fileID: 565712512903838634}
+  - component: {fileID: 4739390882617645402}
+  - component: {fileID: 7293584436014889581}
+  - component: {fileID: 565712512903838679}
+  - component: {fileID: 565712512903838676}
+  - component: {fileID: 565712512903838677}
   m_Layer: 3
   m_Name: Handle_right
-  m_TagString: Untagged
+  m_TagString: Bike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &367093819204664018
+--- !u!4 &565712512903838634
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4806889130740200524}
-  m_LocalRotation: {x: -0.09691498, y: -0.59586585, z: -0.13300137, w: -0.7860421}
-  m_LocalPosition: {x: 14.59, y: -1.442, z: 49.822}
+  m_GameObject: {fileID: 4644474936868189492}
+  m_LocalRotation: {x: -0.16455789, y: -0.9859576, z: 0.0016219332, w: 0.028384458}
+  m_LocalPosition: {x: 9.146, y: -3.6843333, z: 33.387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4829072176288716834
+  m_LocalEulerAnglesHint: {x: -0.352, y: 183.239, z: 18.941}
+--- !u!33 &4739390882617645402
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4806889130740200524}
+  m_GameObject: {fileID: 4644474936868189492}
   m_Mesh: {fileID: -404226096157412536, guid: 21909d02aa498834db298158c09d8ea4, type: 3}
---- !u!23 &7492293286983580437
+--- !u!23 &7293584436014889581
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4806889130740200524}
+  m_GameObject: {fileID: 4644474936868189492}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,29 +86,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &367093819204663983
+--- !u!54 &565712512903838679
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4806889130740200524}
+  m_GameObject: {fileID: 4644474936868189492}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &367093819204663980
+--- !u!114 &565712512903838676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4806889130740200524}
+  m_GameObject: {fileID: 4644474936868189492}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
@@ -217,13 +217,13 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
---- !u!65 &367093819204663981
+--- !u!65 &565712512903838677
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4806889130740200524}
+  m_GameObject: {fileID: 4644474936868189492}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
