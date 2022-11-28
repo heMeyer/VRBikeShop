@@ -282,6 +282,8 @@ GameObject:
   - component: {fileID: 49440967}
   - component: {fileID: 49440969}
   - component: {fileID: 49440968}
+  - component: {fileID: 49440970}
+  - component: {fileID: 49440971}
   m_Layer: 0
   m_Name: Socket_Bike
   m_TagString: Untagged
@@ -321,7 +323,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 2
+    m_Bits: 262146
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -368,6 +370,32 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &49440970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49440966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04de0c2a1da8cbc4182905b34fc6bcc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partCount: 0
+  bicycleAssembly: {fileID: 182431481}
+--- !u!114 &49440971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49440966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7fb02c3c43e4374f8bb03fc04a2be03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &78937303
 GameObject:
   m_ObjectHideFlags: 0
@@ -6284,6 +6312,11 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &182431481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 692151942515731029, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+  m_PrefabInstance: {fileID: 9107233081963626732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207262031
 GameObject:
   m_ObjectHideFlags: 0
@@ -8397,7 +8430,7 @@ Transform:
   - {fileID: 2030402676}
   - {fileID: 125094210}
   m_Father: {fileID: 1387509657}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &908713989
 GameObject:
@@ -9592,6 +9625,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 9107233081963626733}
   - {fileID: 106784906738832229}
   - {fileID: 2036742241}
   - {fileID: 813561766}
@@ -12668,7 +12702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 416254, guid: 47af58fd905aee649a315f604914d38e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 416254, guid: 47af58fd905aee649a315f604914d38e, type: 3}
       propertyPath: m_LocalScale.x
@@ -13326,7 +13360,7 @@ Transform:
   - {fileID: 1032418847}
   - {fileID: 1314533104}
   m_Father: {fileID: 1387509657}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 92.12201, y: -33.17798, z: 143.288}
 --- !u!114 &2122769188
 MonoBehaviour:
@@ -13843,7 +13877,7 @@ Transform:
   - {fileID: 5885509160557261394}
   - {fileID: 7006953913601461717}
   m_Father: {fileID: 1387509657}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &393792817754062733 stripped
 Transform:
@@ -14935,6 +14969,276 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c51d912dc17bcd145b9c00736ae719c2, type: 3}
+--- !u!1001 &9107233081963626732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1387509657}
+    m_Modifications:
+    - target: {fileID: 11829834757501879, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 217420764078830530, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 217420764078830530, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 217420764078830530, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 310680133513393613, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 662225845363392451, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 662225845363392451, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 662225845363392451, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 692151942515731029, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_Name
+      value: BikeAssembly
+      objectReference: {fileID: 0}
+    - target: {fileID: 692151942515731029, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685971327446971025, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 1929865481539739438, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 2584598273655135774, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 2584598273655135774, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584598273655135774, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873519474394239884, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 2873519474394239884, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873519474394239884, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4345818256535664107, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 4382009918797103343, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 4941009708050872480, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 5263194520905975294, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 5263194520905975294, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5263194520905975294, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436481901024924133, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 5832821765031995903, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 5832821765031995903, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832821765031995903, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6328497761505103235, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 6412250572688107264, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_MovementType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6412250572688107264, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 262144
+      objectReference: {fileID: 0}
+    - target: {fileID: 6613671242874782612, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 6613671242874782612, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6613671242874782612, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708159856916856113, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 6708159856916856113, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6708159856916856113, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855624349064627331, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 6855624349064627331, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855624349064627331, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969807103862693749, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 6969807103862693749, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969807103862693749, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031868639318606742, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 7145846328801196547, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 8142669619643926872, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 8142669619643926872, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142669619643926872, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.8798614
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.688719
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.0192614
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.45221764
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7803189
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.42936072
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04744439
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 59.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -62.995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -83.301
+      objectReference: {fileID: 0}
+    - target: {fileID: 8224125641531021155, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 8445510990549436286, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 9126460951253198107, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 207262032}
+    - target: {fileID: 9126460951253198107, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9126460951253198107, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+      propertyPath: m_InteractableCantHoverMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+--- !u!4 &9107233081963626733 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8180212672666649540, guid: 8dea0c0455320f64aaa667a55b429e36, type: 3}
+  m_PrefabInstance: {fileID: 9107233081963626732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9146716435877863181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8591741138791179540, guid: 5a2049263cad408498d1b9e2d6f137f7, type: 3}
