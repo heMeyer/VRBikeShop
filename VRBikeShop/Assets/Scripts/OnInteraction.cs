@@ -19,9 +19,10 @@ public class OnInteraction : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Bike")
+        if (other.gameObject.tag == "Bike" || other.gameObject.tag == "GrabInteractable")
         {
             other.attachedRigidbody.isKinematic = false;
         }
+        
     }
 }

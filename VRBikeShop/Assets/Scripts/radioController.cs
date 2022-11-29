@@ -45,7 +45,7 @@ public class radioController : MonoBehaviour
     {
         audioSource.clip = clip;
 
-        if (clip = musicClip)
+        if (clip == musicClip)
         {
             audioSource.time = musicClipTime;
         }

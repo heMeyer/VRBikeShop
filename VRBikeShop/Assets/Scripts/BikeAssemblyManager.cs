@@ -8,13 +8,18 @@ public class BikeAssemblyManager : MonoBehaviour
     XRSocketInteractor xRSocketInteractor;
     public GameObject bicycleAssembly;
     private bool somethingInSocket = false;
+    private bool wrenchInReach = false;
     public int partCount = 0;
     private ArrayList bikeParts = new ArrayList();
+
+    private AudioSource audioSource;
+    public AudioClip screwSound;
 
     // Start is called before the first frame update
     void Start()
     {
         xRSocketInteractor = GetComponent<XRSocketInteractor>();
+        audioSource = this.transform.parent.gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,7 +27,7 @@ public class BikeAssemblyManager : MonoBehaviour
     {
         socketCheck();
 
-        if (somethingInSocket && partCount >= 13)
+        if (somethingInSocket && partCount >= 13 && wrenchInReach)
         {
             mergeBike();
             partCount = 0;
@@ -32,6 +37,23 @@ public class BikeAssemblyManager : MonoBehaviour
     void socketCheck()
     {
         somethingInSocket = xRSocketInteractor.hasSelection;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Wrench_Open")
+        {
+            wrenchInReach = true;
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name == "Wrench_Open")
+        {
+            wrenchInReach = false;
+        }
     }
 
     public void addInSocket(GameObject bikePart)
@@ -46,8 +68,11 @@ public class BikeAssemblyManager : MonoBehaviour
 
         foreach(GameObject go in bikeParts) {
             Destroy(go);
-            // bikeParts.Remove(go);
         }
+        bikeParts.Clear();
+
+        audioSource.clip = screwSound;
+        audioSource.Play();
 
         bicycleAssembly.SetActive(true);
     }
