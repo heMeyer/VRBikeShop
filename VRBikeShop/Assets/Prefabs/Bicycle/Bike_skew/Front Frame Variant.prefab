@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1175756589357073695, guid: 5a2049263cad408498d1b9e2d6f137f7, type: 3}
       propertyPath: m_Name
-      value: Front Frame
+      value: Front Frame Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1175756589357073695, guid: 5a2049263cad408498d1b9e2d6f137f7, type: 3}
       propertyPath: m_Layer
@@ -147,6 +147,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2660676053381076051, guid: 5a2049263cad408498d1b9e2d6f137f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ec9dec5dec3e7c4083a16f6873e1a0a, type: 2}
     - target: {fileID: 5724961519664087454, guid: 5a2049263cad408498d1b9e2d6f137f7, type: 3}
       propertyPath: m_Layer
       value: 0

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2024077055591330128, guid: 552156c80aa414140aee9fae4a966e25, type: 3}
       propertyPath: m_Name
-      value: Wheel2
+      value: Wheel2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2024077055591330128, guid: 552156c80aa414140aee9fae4a966e25, type: 3}
       propertyPath: m_Layer
@@ -63,5 +63,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.207
       objectReference: {fileID: 0}
+    - target: {fileID: 6202762037295031851, guid: 552156c80aa414140aee9fae4a966e25, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcd58381f9dc5044389d14c44d37a378, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 552156c80aa414140aee9fae4a966e25, type: 3}

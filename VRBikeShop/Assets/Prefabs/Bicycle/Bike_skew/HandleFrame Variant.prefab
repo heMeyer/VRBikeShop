@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2531715321900727793, guid: 60f9fa9d08366fb478b37880a8bd89f7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcd58381f9dc5044389d14c44d37a378, type: 2}
     - target: {fileID: 3250949038318630322, guid: 60f9fa9d08366fb478b37880a8bd89f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.17579998
@@ -153,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4160955120535137955, guid: 60f9fa9d08366fb478b37880a8bd89f7, type: 3}
       propertyPath: m_Name
-      value: HandleFrame
+      value: HandleFrame Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4160955120535137955, guid: 60f9fa9d08366fb478b37880a8bd89f7, type: 3}
       propertyPath: m_Layer

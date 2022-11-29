@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5168548599181481276, guid: 63ae3343beb9516448377ddf7ecc1dc3, type: 3}
       propertyPath: m_Name
-      value: Pedal_Right
+      value: Pedal_Right Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5168548599181481276, guid: 63ae3343beb9516448377ddf7ecc1dc3, type: 3}
       propertyPath: m_Layer
@@ -23,6 +23,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6480003545017205777, guid: 63ae3343beb9516448377ddf7ecc1dc3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcd58381f9dc5044389d14c44d37a378, type: 2}
     - target: {fileID: 8454696571556718342, guid: 63ae3343beb9516448377ddf7ecc1dc3, type: 3}
       propertyPath: m_RootOrder
       value: 0

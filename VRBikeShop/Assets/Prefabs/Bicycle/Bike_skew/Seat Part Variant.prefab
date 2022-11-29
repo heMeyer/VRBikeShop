@@ -51,9 +51,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180.683
       objectReference: {fileID: 0}
+    - target: {fileID: 1549484020402639856, guid: e1c8b795b1ac54a4196e160b441b1d41, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcd58381f9dc5044389d14c44d37a378, type: 2}
     - target: {fileID: 5049239831370322690, guid: e1c8b795b1ac54a4196e160b441b1d41, type: 3}
       propertyPath: m_Name
-      value: ' Seat Part'
+      value: Seat Part Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5049239831370322690, guid: e1c8b795b1ac54a4196e160b441b1d41, type: 3}
       propertyPath: m_Layer
@@ -71,5 +75,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7448314787126560462, guid: e1c8b795b1ac54a4196e160b441b1d41, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcd58381f9dc5044389d14c44d37a378, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1c8b795b1ac54a4196e160b441b1d41, type: 3}

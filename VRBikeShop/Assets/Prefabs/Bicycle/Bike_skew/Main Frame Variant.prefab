@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1931056016215475918, guid: 5b06bb0efd5d8914c9ffab1867eef862, type: 3}
       propertyPath: m_Name
-      value: Main Frame
+      value: Main Frame Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1931056016215475918, guid: 5b06bb0efd5d8914c9ffab1867eef862, type: 3}
       propertyPath: m_Layer
@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3942233102716861442, guid: 5b06bb0efd5d8914c9ffab1867eef862, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ec9dec5dec3e7c4083a16f6873e1a0a, type: 2}
     - target: {fileID: 4678575961627253316, guid: 5b06bb0efd5d8914c9ffab1867eef862, type: 3}
       propertyPath: m_RootOrder
       value: 0

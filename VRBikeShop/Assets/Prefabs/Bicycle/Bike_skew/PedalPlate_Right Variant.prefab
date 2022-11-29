@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 791076540206455097, guid: b64cdc25c24a74340a51e0abac67386a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fcd58381f9dc5044389d14c44d37a378, type: 2}
     - target: {fileID: 4849111369001305921, guid: b64cdc25c24a74340a51e0abac67386a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5655763764006144054, guid: b64cdc25c24a74340a51e0abac67386a, type: 3}
       propertyPath: m_Name
-      value: PedalPlate_Right
+      value: PedalPlate_Right Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5655763764006144054, guid: b64cdc25c24a74340a51e0abac67386a, type: 3}
       propertyPath: m_Layer

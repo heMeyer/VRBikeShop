@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3134758433120815855, guid: e7f04d9646aa3d24eb063c1693f26904, type: 3}
       propertyPath: m_Name
-      value: Front Frame Part
+      value: Front Frame Part Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3134758433120815855, guid: e7f04d9646aa3d24eb063c1693f26904, type: 3}
       propertyPath: m_Layer
@@ -63,5 +63,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6080646015008693502, guid: e7f04d9646aa3d24eb063c1693f26904, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ec9dec5dec3e7c4083a16f6873e1a0a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7f04d9646aa3d24eb063c1693f26904, type: 3}
