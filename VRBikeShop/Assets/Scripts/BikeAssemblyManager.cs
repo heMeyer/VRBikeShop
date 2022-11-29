@@ -29,7 +29,7 @@ public class BikeAssemblyManager : MonoBehaviour
 
         if (somethingInSocket && partCount >= 13 && wrenchInReach)
         {
-            mergeBike();
+            StartCoroutine(assembleBike());
             partCount = 0;
         }
     }
@@ -62,17 +62,31 @@ public class BikeAssemblyManager : MonoBehaviour
         bikeParts.Add(bikePart);
     }
 
-    void mergeBike()
+    IEnumerator assembleBike()
+    {
+        mergeBike1();
+        yield return new WaitForSeconds(screwSound.length);
+        mergeBike2();
+    }
+
+    void mergeBike1()
     {
         Debug.Log("Rad zusammengebaut");
 
-        foreach(GameObject go in bikeParts) {
-            Destroy(go);
-        }
-        bikeParts.Clear();
-
         audioSource.clip = screwSound;
         audioSource.Play();
+
+        assembleBike();
+    }
+
+    void mergeBike2()
+    {
+        foreach (GameObject go in bikeParts)
+        {
+            Destroy(go);
+        }
+
+        bikeParts.Clear();
 
         bicycleAssembly.SetActive(true);
     }
