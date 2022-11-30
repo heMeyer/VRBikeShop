@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731715, g: 0.13414735, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 29349402}
   - component: {fileID: 29349401}
   - component: {fileID: 29349400}
-  - component: {fileID: 29349403}
   m_Layer: 0
   m_Name: Next
   m_TagString: UI_RayInteractable
@@ -258,19 +257,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29349398}
   m_CullTransparentMesh: 1
---- !u!114 &29349403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29349398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad6e0e7850925c847ac04b642b8f98fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toBeDestroyed: {fileID: 29349398}
 --- !u!1 &49440966
 GameObject:
   m_ObjectHideFlags: 0
@@ -5878,15 +5864,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   messages:
-  - 'Herzlich Willkommen im Fahrrad Reparatur-Shop.
+  - 'Herzlich Willkommen in der Fahhradwerkstatt.
 
     Dieses Klemmbrett wird dir
     bei deinen kommenden Aufgaben zur Seite stehen.'
-  - "Du kannst dieses Klemmbrett jeweils an die Haltepunkte in den verschiedenen
-    R\xE4umen anhelften."
-  - "Nimm zun\xE4chst den Fahrradrahmen und befestige ihn in der Halterung im n\xE4chsten
-    Raum."
-  - Ende
+  - "Du kannst dieses Klemmbrett jeweils an den Haltepunkte in den verschiedenen
+    R\xE4umen befestigen oder es einfach ablegen."
+  - Deine Aufgabe ist es, ein Fahhrad zusammenzubauen.
+  - "Starte mit dem Fahrradrahmen, der hochkant im nebenstehenden Regal steht. Positioniere
+    ihn im n\xE4chsten Raum in der Rahmenhalterung."
+  - An den Fahhradrahmen kannst du nun die weiteren Elemente anbringen. Zur Orientierung
+    kannst du das (eigentlich als Werbegeschenk gedachte) Modell neben dem Radio
+    nutzen.
+  - "Um die Fahhradteile zu fixieren und den Zusammenbau abzuschlie\xDFen kannst
+    du den Schraubenschl\xFCssel nutzen, der auf der Werkbank befindet."
+  - "Nun kannst du das zusammengebaute Fahhrd auf der Plattform im Ausstellungsraum
+    positionieren und damit diesen Auftrag abschlie\xDFen."
 --- !u!1 &2030402675
 GameObject:
   m_ObjectHideFlags: 0
