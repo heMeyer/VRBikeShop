@@ -7,6 +7,7 @@ TagManager:
   - UI_RayInteractable
   - Bike
   - GrabInteractable
+  - Teleport
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - Bike
   - Water
   - UI
-  - 
+  - Teleport
   - 
   - 
   - 
