@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ToggleRayMRTK : MonoBehaviour
 {
+    [Tooltip("Defines the Offset angle, to correct the Ray error from MRTK3")]
+    [Range(0.0f, 360.0f)]
+    public float OffsetAngle = 225f;
     private Transform TeleportRay;
     private Transform UIRay;
     enum Mode { Off, UI, Teleport}
@@ -21,7 +24,7 @@ public class ToggleRayMRTK : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var ray = new Ray(this.transform.position,  Quaternion.Euler(225f,0f,0f) * this.transform.up);
+        var ray = new Ray(this.transform.position,  Quaternion.Euler(OffsetAngle,0f,0f) * this.transform.up);
         RaycastHit hit;
         LayerMask mask = LayerMask.GetMask("Default"); 
 
