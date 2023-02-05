@@ -5,10 +5,12 @@ using UnityEngine;
 public class ToggleRayMRTK : MonoBehaviour
 {
     [Tooltip("Defines the Offset angle, to correct the Ray error from MRTK3")]
-    [Range(0.0f, 360.0f)]
-    public float OffsetAngle = 225f;
+    [Range(-180.0f, 180.0f)]
+    public float OffsetAngle = 149f;
+    //public Transform TestCube;
     private Transform TeleportRay;
     private Transform UIRay;
+    private Transform RayHitMarker;
     enum Mode { Off, UI, Teleport}
     private Mode state = Mode.Off;
     private bool changeHappened = false;
@@ -19,19 +21,21 @@ public class ToggleRayMRTK : MonoBehaviour
         TeleportRay = transform.Find("Far Ray (Teleport)");
         UIRay = transform.Find("Far Ray (UI)");
         Debug.Log("ToggleRayMRTK");
+        RayHitMarker = TeleportRay.Find("RayReticle");
     }
 
     // Update is called once per frame
     void Update()
     {
-        var ray = new Ray(this.transform.position,  Quaternion.Euler(OffsetAngle,0f,0f) * this.transform.up);
+        Vector3 Direction = Vector3.Normalize(RayHitMarker.position - this.transform.position);
+        var ray = new Ray(this.transform.position+ Direction*0.2f, Direction );
         RaycastHit hit;
         LayerMask mask = LayerMask.GetMask("Default"); 
 
         if (Physics.Raycast(ray, out hit, 10, mask))
         {
-             //Debug.Log(state.ToString());
-
+            //Debug.Log(state.ToString());
+            //TestCube.position = RayHitMarker.position;
             if (hit.transform.gameObject.tag == "UI_RayInteractable" && state != Mode.UI)
             {
                 state = Mode.UI;
