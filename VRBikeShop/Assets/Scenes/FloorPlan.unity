@@ -11000,6 +11000,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Front Frame Part
       objectReference: {fileID: 0}
+    - target: {fileID: 7486962829330077077, guid: ada33bf2eaa479748acfa8ecf482e846, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7486962829330077099, guid: ada33bf2eaa479748acfa8ecf482e846, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12042,6 +12046,10 @@ PrefabInstance:
     - target: {fileID: 1158868571285990609, guid: 50d83bc8c9faeab47bc6e7e675215db9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -82.725
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158868571285990611, guid: 50d83bc8c9faeab47bc6e7e675215db9, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8610882192621145306, guid: 50d83bc8c9faeab47bc6e7e675215db9, type: 3}
       propertyPath: m_Name
